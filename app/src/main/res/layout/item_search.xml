@@ -1,0 +1,44 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:paddingBottom="4dp"
+                                             android:paddingEnd="16dp"
+                                             android:paddingStart="16dp"
+                                             android:paddingTop="4dp">
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_search_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_search"
+        app:layout_constraintStart_toEndOf="@id/iv_search"
+        app:layout_constraintTop_toTopOf="@id/iv_search"
+        app:layout_constraintVertical_bias="0.250"
+        tools:text="Kacamata" />
+
+    <TextView
+        android:id="@+id/tv_search_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_search"
+        app:layout_constraintTop_toBottomOf="@id/tv_search_name"
+        tools:text="999" />
+</android.support.constraint.ConstraintLayout>
